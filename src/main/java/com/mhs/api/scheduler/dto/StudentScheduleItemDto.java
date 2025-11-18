@@ -5,7 +5,10 @@ public record StudentScheduleItemDto(
         int sectionId,
         String courseCode,
         String courseName,
-        String schedule, // e.g., "Tue 14:00-15:30"
-        String teacher,
-        boolean timeConflict
+        int sectionNumber,
+        String day,
+        String startTime,
+        String endTime,
+        String roomName,
+        String teacherName
 ) {}

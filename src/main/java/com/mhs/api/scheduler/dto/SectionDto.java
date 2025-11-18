@@ -5,9 +5,13 @@ public record SectionDto(
         int sectionId,
         String courseCode,
         String courseName,
-        String schedule,  // e.g., "Mon 10:00-11:30"
+        int sectionNumber,
+        String schedule,    // "Mon 09:00-10:00" or "TBA"
+        String roomName,
+        String teacherName,
+        int capacity,
         int seatsLeft,
-        String teacher,
         boolean prereqsMet,
-        boolean timeConflict
+        boolean timeConflict,
+        boolean canEnroll
 ) {}
